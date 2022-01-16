@@ -18,7 +18,7 @@ public class InputFormSubmitTest extends TestCase {
 
     @Override
     public void tearDown() throws Exception {
-        //driver.quit();
+        driver.quit();
     }
     public void testNameValidationValid(){
         driver.get("http://demo.seleniumeasy.com/input-form-demo.html");
