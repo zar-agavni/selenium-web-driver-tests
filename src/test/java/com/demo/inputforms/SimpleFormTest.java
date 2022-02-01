@@ -27,12 +27,8 @@ public class SimpleFormTest extends TestCase {
         final WebElement userMessage = driver.findElement(By.id("user-message"));
         userMessage.sendKeys("Hello");
 
-        driver.findElement(By.className("btn-default")).click();
+        driver.findElement(By.cssSelector("#get-input .btn-default")).click();
         String text = driver.findElement(By.id("display")).getText();
-
-        //Thread.sleep(15000);
-
-        driver.quit();
 
         assertEquals("Hello", text);
     }
