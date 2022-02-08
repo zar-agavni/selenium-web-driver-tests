@@ -1,25 +1,9 @@
 package com.demo.inputforms;
 
-import junit.framework.TestCase;
+import com.demo.ChromeTestCase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CheckboxTest extends TestCase {
-
-    private WebDriver driver;
-
-    @Override
-    public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\zarag\\Downloads\\chromedriver_96\\chromedriver.exe");
-        driver = new ChromeDriver();
-    }
-
-    @Override
-    public void tearDown() throws Exception {
-        driver.quit();
-    }
+public class CheckboxTest extends ChromeTestCase {
 
     public void testSingleCheckBox() {
         // Given
